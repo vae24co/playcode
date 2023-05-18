@@ -1,0 +1,11 @@
+ServerSignature Off
+DefaultLanguage en-US
+AddType application/x-httpd-php .php .inc .phtml .html
+DirectoryIndex index.php index.html index.phtml
+Options All -Indexes
+FileETag None
+RewriteEngine On
+RewriteBase /
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^((?!(.+)\.(js|css|ico|png|jpg|svg|eot|woff|woff2|ttf|pdf|txt|md))(?!(page|~play)\/).*)$ /index.php?ospring=zero&ohost=%1&otld=%2&oplatform=site&olink=$1 [NC,QSA,END]
