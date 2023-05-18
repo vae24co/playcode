@@ -1,0 +1,58 @@
+/* fancy checkbox and radio button */
+.radio-24,
+.check-box-24 {
+    width: 24px;
+    height: 24px;
+}
+
+.dropify-wrapper {
+    @include border-radius(3px);
+
+    background-color: var(--body-color);
+    color: var(--color-500);
+    border: 1px solid var(--border-color);
+
+    &:hover {
+        background-image: linear-gradient(-45deg,
+                var(--border-color) 25%,
+                transparent 25%,
+                transparent 50%,
+                var(--border-color) 50%,
+                var(--border-color) 75%,
+                transparent 75%,
+                transparent);
+    }
+
+    .dropify-preview {
+        background-color: var(--body-color);
+    }
+
+    .dropify-message {
+        span {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.dropify-font-upload:before,
+.dropify-wrapper .dropify-message span.file-icon:before {
+    content: "\f0ee";
+    font-family: "FontAwesome";
+}
+
+.note-editor.note-frame {
+    background-color: var(--body-color) !important;
+    color: var(--color-500) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable {
+    background-color: var(--body-color) !important;
+    color: var(--color-500) !important;
+}
+
+.note-editor.note-frame .note-statusbar {
+    background-color: var(--body-color) !important;
+}
