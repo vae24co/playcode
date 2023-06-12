@@ -1,0 +1,64 @@
+body {
+	line-height: 1.4;
+}
+
+.page {
+	border: 1px solid tan;
+	padding: 10px;
+}
+.navigation {
+	margin-bottom:10px;
+	color: tan;
+}
+
+h1 {
+	font-size: 1.2em;
+}
+h1, p {
+	margin: 0;
+}
+a {
+	color: tan;
+	text-decoration: none;
+  font-weight: bold;
+}
+.navigation a.active {
+  font-weight: bold;
+  color: gold;
+}
+.navigation a:hover {
+	text-decoration: underline;
+}
+.navigation a.active:hover {
+  font-weight: bold;
+  color: gold;
+	cursor:default;
+	text-decoration: none;
+}
+
+.blur {
+  filter: blur(3px); /* Add any other desired styling for the blur effect */
+}
+
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  text-align: center;
+}
+
+.spinner img {
+  width: 50px; /* Adjust the width and height as per your spinner image */
+  height: 50px;
+}
