@@ -3,6 +3,10 @@ function renameExtension($dir, $oldExtension, $newExtension) {
 	// Set the path to the directory containing the files to rename
 	// $dir = "/path/to/directory/";
 
+	if (substr($dir, -1) !== '/'){
+		$dir .= '/';
+	}
+
 	// Open the directory
 	if ($handle = opendir($dir)) {
 
